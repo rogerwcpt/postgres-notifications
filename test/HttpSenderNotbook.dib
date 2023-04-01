@@ -1,0 +1,14 @@
+#!meta
+
+{"kernelInfo":{"defaultKernelName":"csharp","items":[{"aliases":[],"languageName":"csharp","name":"csharp"}]}}
+
+#!csharp
+
+    using System.Net.Http;
+    using System.Diagnostics;
+    
+    var httpClient = new HttpClient();
+    var i = DateTime.Now.Ticks;
+    Console.WriteLine($"Sending {i}");
+    var result = await httpClient.PostAsync($"http://localhost:5028/Notification/Send?message={i}", new StringContent(string.Empty));
+    Console.WriteLine(result.StatusCode);
