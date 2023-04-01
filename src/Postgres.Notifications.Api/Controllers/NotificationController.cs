@@ -9,12 +9,12 @@ namespace Postgres.Notifications.Api.Controllers;
 public class NotificationController
 {
    [HttpPost("Send")]
-   public async Task Send()
+   public async Task Send(string message)
    {
       await using var connection = new NpgsqlConnection("server=localhost;port=5432;database=postgres;user id=postgres;password=Password123");
       await connection.OpenAsync();
       var cmd = connection.CreateCommand();
-      cmd.CommandText = "select pg_notify('hi there')";
+      cmd.CommandText = $"select pg_notify('mychannel', '{message}')";
       var result = await cmd.ExecuteScalarAsync();
       Debug.WriteLine(result);
    }

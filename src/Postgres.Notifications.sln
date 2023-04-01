@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgres.Notifications.Api", "Postgres.Notifications.Api\Postgres.Notifications.Api.csproj", "{8B545E37-57D9-4101-B7EB-8AD211A6D1E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgres.Notifications.Worker", "Postgres.Notifications.Worker\Postgres.Notifications.Worker.csproj", "{345C6834-4583-4B60-9E65-B1483DC8C73E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postgres.Notifications.Console", "Postgres.Notifications.Console\Postgres.Notifications.Console.csproj", "{7973AFB3-6E09-442F-9970-717FD6944519}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{8B545E37-57D9-4101-B7EB-8AD211A6D1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B545E37-57D9-4101-B7EB-8AD211A6D1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B545E37-57D9-4101-B7EB-8AD211A6D1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{345C6834-4583-4B60-9E65-B1483DC8C73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345C6834-4583-4B60-9E65-B1483DC8C73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345C6834-4583-4B60-9E65-B1483DC8C73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345C6834-4583-4B60-9E65-B1483DC8C73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7973AFB3-6E09-442F-9970-717FD6944519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7973AFB3-6E09-442F-9970-717FD6944519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7973AFB3-6E09-442F-9970-717FD6944519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7973AFB3-6E09-442F-9970-717FD6944519}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
